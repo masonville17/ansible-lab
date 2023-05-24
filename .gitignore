@@ -1,0 +1,5 @@
+*.ssh
+*.pub
+*.crt
+*.pem
+*ed25519
