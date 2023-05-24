@@ -6,3 +6,5 @@ This is a simple quickstart I've created that includes automation for master nod
 
 
 `bash addnode.sh` can be used to initialize a master node. If no ED25519 key is present in the user's `~/.ssh/id_ed25519(.pub)` file, one will be generated for exchange with subservient nodes.
+
+todo: source .env for addnode or read user input
