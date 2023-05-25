@@ -1,0 +1,14 @@
+---
+- hosts: servers
+  gather_facts: no
+  tasks:
+    - name: install sshpass for key distribution
+      apt:
+        name: sshpass
+        state: present
+      become: yes
+    - name: distribute ssh key
+      authorized_key:
+        user: <slave_node_username>
+        state: present
+        key: "{{ lookup('file', '/root/.ssh/id_ed25519.pub') }}"
