@@ -81,3 +81,15 @@ EOF
 # Deploying on Kubernetes
 kubectl apply -f deployment.yaml
 
+# Obtain our hostnames for a dynamic inventory file.
+echo "obtaining hostname of all replicas for dynamic inventory file."
+nodeHostNames=$(kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="Hostname")].address}')
+
+echo "node hostnames (json):"
+echo $nodeHostNames
+
+echo "exchanging keys with nodes in testing swaarm."
+
+ansible-playbook -i $nodeHostNames getTestNodeKeys.yaml
+
+
