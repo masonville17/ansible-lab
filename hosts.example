@@ -1,0 +1,3 @@
+[servers]
+master ansible_host=<master_node_ip>
+slave ansible_host=<slave_node_ip>
