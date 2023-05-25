@@ -79,11 +79,19 @@ spec:
 EOF
 
 # Deploying on Kubernetes
-kubectl apply -f deployment.yaml
+#kubectl apply -f deployment.yaml
+
+source ./kubespary/kubespray.cfg
+cd $KUBESPRAY_PATH
+
+
+ansible-playbook -i $INVENTORY_PATH deployment.yml -b -v \
+	--private-key=~/.ssh/id_ed25519
+
 
 # Obtain our hostnames for a dynamic inventory file.
 echo "obtaining hostname of all replicas for dynamic inventory file."
 
-ansible-playbook -i ./helpers/gethostnames getTestNodeKeys.yaml
+kubectl get nodes > nodes.txt
 
 
