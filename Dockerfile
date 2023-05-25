@@ -4,7 +4,7 @@ RUN apt-get update     && apt-get upgrade -y     && apt-get install -y openssh-s
 
 RUN mkdir /var/run/sshd
 RUN echo 'root:DoYouEvenGriftBr0?' | chpasswd
-RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+#RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 # Create a non-root user: mason
 #RUN useradd -m mason && echo "mason:mason" | chpasswd && adduser mason sudo
 
