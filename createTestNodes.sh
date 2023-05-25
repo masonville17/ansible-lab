@@ -20,7 +20,7 @@ if [[ -z "$password" ]]; then
 fi
 # Prompt for Replica Count
 while true; do
-	read -p "Enter # of Replicas (1-100): " replicaCount
+	read -p "Enter # of Replicas (1-5): " replicaCount
   if validate_input "$replicaCount"; then
     break
   fi
@@ -83,13 +83,7 @@ kubectl apply -f deployment.yaml
 
 # Obtain our hostnames for a dynamic inventory file.
 echo "obtaining hostname of all replicas for dynamic inventory file."
-nodeHostNames=$(kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="Hostname")].address}')
 
-echo "node hostnames (json):"
-echo $nodeHostNames
-
-echo "exchanging keys with nodes in testing swaarm."
-
-ansible-playbook -i $nodeHostNames getTestNodeKeys.yaml
+ansible-playbook -i ./helpers/gethostnames getTestNodeKeys.yaml
 
 
