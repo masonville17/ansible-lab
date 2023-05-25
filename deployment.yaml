@@ -3,7 +3,7 @@ kind: StatefulSet
 metadata:
   name: ubuntu-set
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: ubuntu
