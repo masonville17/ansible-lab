@@ -7,4 +7,6 @@ Also included, is an automated test node cluster creation script. Generates a Do
 
 `./createTestNodes.sh` can be used to create a Kubernetes cluster with a user-defined replica count, username, and password. (todo: use and echo back randomized hostnames into a generated inventory file for testing Ansible automations and tools )
 
+*in production, we will not want to generate ssh keys in our cluster, the goal of ./createTestNodes.sh is to test ansible tools and utilities 
+
 ![image](https://github.com/masonville17/ansible-lab/assets/90802741/6c17065d-5da8-45f5-b9f7-1e4ce19032db)
