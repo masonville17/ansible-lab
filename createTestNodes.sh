@@ -97,6 +97,6 @@ spec:
         ports:
         - containerPort: 22
 EOF
-
+cp deployment.yaml molecule/init/molecule.yml
 # Deploying local
 molecule converge -s init

@@ -3,3 +3,5 @@
 *.crt
 *.pem
 *ed25519
+*testnode.pwd*
+*testnode.connection.pwd*
