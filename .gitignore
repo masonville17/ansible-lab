@@ -4,3 +4,7 @@
 *.pem
 *ed25519
 *Dockerfile*
+*.log
+*testnode.pwd*
+*testnode.connection.pwd*
+

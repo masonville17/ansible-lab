@@ -1,0 +1,30 @@
+2023-05-25 11:48:01,429 p=203064 u=mason n=ansible | [DEPRECATION WARNING]: DEFAULT_FACT_PATH option, the module_defaults keyword is
+ a more generic version and can apply to all calls to the 
+M(ansible.builtin.gather_facts) or M(ansible.builtin.setup) actions, use 
+module_defaults instead. This feature will be removed from ansible-core in 
+version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2023-05-25 11:49:35,889 p=204542 u=mason n=ansible | [DEPRECATION WARNING]: DEFAULT_FACT_PATH option, the module_defaults keyword is
+ a more generic version and can apply to all calls to the 
+M(ansible.builtin.gather_facts) or M(ansible.builtin.setup) actions, use 
+module_defaults instead. This feature will be removed from ansible-core in 
+version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2023-05-25 12:00:08,941 p=213839 u=mason n=ansible | [DEPRECATION WARNING]: DEFAULT_FACT_PATH option, the module_defaults keyword is
+ a more generic version and can apply to all calls to the 
+M(ansible.builtin.gather_facts) or M(ansible.builtin.setup) actions, use 
+module_defaults instead. This feature will be removed from ansible-core in 
+version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2023-05-25 12:00:28,470 p=214041 u=mason n=ansible | [DEPRECATION WARNING]: DEFAULT_FACT_PATH option, the module_defaults keyword is
+ a more generic version and can apply to all calls to the 
+M(ansible.builtin.gather_facts) or M(ansible.builtin.setup) actions, use 
+module_defaults instead. This feature will be removed from ansible-core in 
+version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2023-05-25 12:01:41,088 p=215223 u=mason n=ansible | [DEPRECATION WARNING]: DEFAULT_FACT_PATH option, the module_defaults keyword is
+ a more generic version and can apply to all calls to the 
+M(ansible.builtin.gather_facts) or M(ansible.builtin.setup) actions, use 
+module_defaults instead. This feature will be removed from ansible-core in 
+version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
