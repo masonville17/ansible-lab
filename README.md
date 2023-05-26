@@ -1,6 +1,19 @@
 # ansible-lab
 This is a simple quickstart I've created that includes automation for master node initialization, subservient node initialization, and ED25519 SSH Key Exchange.
 
+Mostly Just for fun and re-education purposes, but I plan to make this an automated Ansible testing tool for any of the more common ecosystems/methodologies. eventually, I'll have it so one can spin up any number of nodes in any selected mix of ecosystems and, between them, test Ansible against them.
+
+also be wary, need to not cat out generated Dockerfile, but rather set to variable, use/build image, set var to null. this will be changed soon.
+
+here's what id eventually like to do:
+1. Select Debian/Ubuntu based image from local or repo or build image from generated Dockerfile 
+2. select ecosystems/methodologies to test against
+3. for each selected ecosystem, prompt for number of nodes to spin up
+4. prompt for log level, log as csv, notating ecosystem
+5. spin up all, exchange keys
+6. test
+7. when finished, use xdg-open intent to open csv with default editor 
+
 Also included, is an automated test node cluster creation script. Generates a Dockerfile, builds to an image, which is then deployed to a local cluster for testing.
 
 1-Testing Kubernetes Modules: Ansible has specific modules for interacting with Kubernetes, such as k8s, k8s_info, etc. If your playbooks use these modules, having a Kubernetes cluster would be beneficial for testing.
