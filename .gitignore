@@ -3,5 +3,6 @@
 *.crt
 *.pem
 *ed25519
+*Dockerfile*
 *testnode.pwd*
 *testnode.connection.pwd*
