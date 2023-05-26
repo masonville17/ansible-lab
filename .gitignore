@@ -3,3 +3,4 @@
 *.crt
 *.pem
 *ed25519
+*Dockerfile*
